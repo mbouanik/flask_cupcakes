@@ -11,6 +11,7 @@ with app.app_context():
 cupcakes = [
     Cupcake(flavor="Red Velvet", size="large", rating=7.3, image="https://sallysbakingaddiction.com/wp-content/uploads/2014/10/Red-Velvet-Cupcakes-6.jpg"),
     Cupcake(flavor="Super Moist Chocolate", size="large", rating=8.7, image="https://sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg"),
+    Cupcake(flavor="Super Lemon", size='medium', rating=8.1),
     Cupcake(flavor="Pumpkin Spice Cupcakes with Marshmallow Frosting", size="medium", rating=7.8, image="https://sallysbakingaddiction.com/wp-content/uploads/2014/11/Spiced-Pumpkin-Cupcakes-with-fluffy-marshmallow-frosting.jpg"),
     Cupcake(flavor="Banana Cupcakes with Cinnamon Cream Cheese Frosting", size="small", rating=8.5, image="https://sallysbakingaddiction.com/wp-content/uploads/2017/08/banana-cupcakes-cinnamon-cream-cheese-frosting.jpg"),
     Cupcake(flavor="Brown Sugar Butterscotch Cupcakes", size="medium", rating=6.3, image="https://sallysbakingaddiction.com/wp-content/uploads/2013/11/Butterscotch-Filled-Brown-Sugar-Cupcakes-by-sallysbakingaddiction.com_.jpg"),

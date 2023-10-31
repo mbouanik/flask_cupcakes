@@ -1,14 +1,19 @@
 {% extends "base.html" %} {% block title %} Home {% endblock %}
 {% block content %}
-
-<h1> Cupcakes </h1>
+<div class='cupcake-title'>
+    <h1> All your favorites Cupcakes </h1>
+</div>
 <div class="cupcakes">
 {% for cupcake in cupcakes %}
     <div class='cupcake'>
+        <div class='rating'>
+            ⭐️ {{ cupcake.rating}} 
+        </div>
         <div>
             <img src="{{cupcake.image}}" alt="">
         </div>
-        <p>{{ cupcake.size.capitalize() }} {{ cupcake.flavor }} ⭐️ {{ cupcake.rating}}</p>
+        <p>{{ cupcake.size.capitalize() }}</p>
+        <p>{{ cupcake.flavor }} </p>
     </div>
 {% endfor %}
 </div>

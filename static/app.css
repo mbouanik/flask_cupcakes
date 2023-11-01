@@ -23,7 +23,8 @@ nav {
 p {
   text-align: center;
   text-overflow: ellipsis;
-  width: 13rem;
+  width: 15rem;
+  /* max-height: 2rem; */
   overflow: hidden;
   overflow-wrap: break-word;
   margin: 0;

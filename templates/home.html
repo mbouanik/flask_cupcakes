@@ -3,6 +3,23 @@
 <div class='cupcake-title'>
     <h1> All your favorites Cupcakes </h1>
 </div>
+<div class='cupcake-title'>
+
+<form id="form" action="/api/cupcakes" method="POST">
+    <label for="flavor">Flavor</label>
+    <input type="text" name="flavor">
+
+    <label for="size">Size</label>
+    <input type="text" name="size">
+    
+    <label for="rating">Rating</label>
+    <input type="number" name="rating">
+    
+    <label for="image">Image URL</label>
+    <input type="text" name="image">
+    <button>Submit</button>
+</form>
+</div>
 <div class="cupcakes">
 {% for cupcake in cupcakes %}
     <div class='cupcake'>
@@ -11,9 +28,11 @@
         </div>
         <div>
             <img src="{{cupcake.image}}" alt="">
+            <div class="flavor">
+                <p>{{ cupcake.size.capitalize() }}</p>
+                <p>{{ cupcake.flavor }} </p>
+            </div>
         </div>
-        <p>{{ cupcake.size.capitalize() }}</p>
-        <p>{{ cupcake.flavor }} </p>
     </div>
 {% endfor %}
 </div>

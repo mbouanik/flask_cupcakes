@@ -4,13 +4,15 @@ from init import db
 
 
 class Cupcake(db.Model):
+    __tablename__= "cupcakes"
+    
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     flavor: Mapped[str] = mapped_column(Text, nullable=False)
     size: Mapped[str] = mapped_column(Text, nullable=False)
-    rating: Mapped[str] = mapped_column(Float, nullable=False)
+    rating: Mapped[float] = mapped_column(Float, nullable=False)
     image: Mapped[str] = mapped_column(Text, default="https://tinyurl.com/demo-cupcake")
 
-    def __init__(self, **kwargs) -> None:
+    def __init__(self, **kwargs):
         super(Cupcake, self).__init__(**kwargs)
 
     def serialize(self):

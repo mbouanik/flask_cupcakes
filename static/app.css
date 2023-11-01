@@ -25,13 +25,14 @@ p {
   overflow: hidden;
   overflow-wrap: break-word;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 .cupcakes {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(100, 0, 255, 0.1);
+  border-radius: 2rem;
   padding: 2rem;
   margin: 0 10% 0 10%;
 }
@@ -42,4 +43,13 @@ p {
 
 .cupcake-title {
   text-align: center;
+}
+.flavor {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.rating {
+  font-size: 1.2rem;
+  font-weight: bold;
+  float: right;
 }

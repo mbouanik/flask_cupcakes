@@ -1,5 +1,4 @@
 from flask import Blueprint, jsonify, render_template, request
-from werkzeug.wrappers import response
 from init import db
 from models import Cupcake
 

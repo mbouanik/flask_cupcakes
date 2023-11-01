@@ -13,14 +13,14 @@
     <input type="text" name="size">
     
     <label for="rating">Rating</label>
-    <input type="number" name="rating">
+    <input type="number" name="rating" step="0.01">
     
     <label for="image">Image URL</label>
     <input type="text" name="image">
     <button>Submit</button>
 </form>
 </div>
-<div class="cupcakes">
+<div id="cupcakes" class="cupcakes">
 {% for cupcake in cupcakes %}
     <div class='cupcake'>
         <div class='rating'>
@@ -29,8 +29,8 @@
         <div>
             <img src="{{cupcake.image}}" alt="">
             <div class="flavor">
-                <p>{{ cupcake.size.capitalize() }}</p>
-                <p>{{ cupcake.flavor }} </p>
+                <p> {{ cupcake.size.capitalize() }}</p>
+                <p> {{ cupcake.flavor }} </p>
             </div>
         </div>
     </div>
